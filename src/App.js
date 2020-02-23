@@ -1,14 +1,14 @@
-import React from "react";
-import "./App.css";
-import { Router, Link } from "@reach/router";
+import React from 'react';
+import './App.css';
+import { Router, Link } from '@reach/router';
 
 const ProductsList = () => {
   const products = [
-    { name: "East the Beast", product_id: 1 },
-    { name: "West Bay", product_id: 2 },
-    { name: "Utopian", product_id: 3 },
-    { name: "Utopian", product_id: 3 },
-    { name: "Half Hung", product_id: 4 }
+    { name: 'East the Beast', product_id: 1 },
+    { name: 'West Bay', product_id: 2 },
+    { name: 'Utopian', product_id: 3 },
+    { name: 'Utopian', product_id: 4 },
+    { name: 'Half Hung', product_id: 5 }
   ];
 
   return products.map(product => {
@@ -44,7 +44,7 @@ const Products = () => {
   );
 };
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Router>
@@ -53,6 +53,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;
