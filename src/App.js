@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-const Products = () => {
-  const products = [{name:'citra pale',product_id : 1},{name:'citra something', product_id : 2},{name:'beer x', product_id : 3}]
+const ProductsList = () => {
+  const products = [{name:'East the Beast',product_id : 1},{name:'West Bay', product_id : 2},{name:'Utopian', product_id : 3},{name:'Utopian', product_id : 3},{name:'Half Hung',product_id : 4}]
 
   return products.map(product => {
     return <div>
@@ -12,7 +12,12 @@ const Products = () => {
   })
 }
 
-
+const Products = () => {
+  return <div>
+    <h1>Products</h1>
+    <ProductsList />
+  </div>
+}
 
 function App() {
   return (
