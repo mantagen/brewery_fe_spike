@@ -11,7 +11,7 @@ class GetBatchIngredients extends Component {
     }
 
     componentDidMount(){
-        fetch("/api/batch_ingredients") 
+        fetch("/api/batchIngredients") 
         .then( response => response.json())
         .then(
             (result) => {
@@ -43,7 +43,7 @@ class GetBatchIngredients extends Component {
                   <h1>Batch Ingredients</h1>
                     <ol className="item">
                     {
-                        posts.batch_ingredients.map(post => (
+                        posts.batchIngredients.map(post => (
                             <li key={post.name} >
                                 <div>
                                     <h2><p className="title">{post.name}</p></h2>
